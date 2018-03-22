@@ -18,8 +18,8 @@ def test_xpath():
     #locator2 = "/html/body/jsl/div[3]/div[8]/div[8]/div/div[1]/div/div/div[5]/div[1]/div[2]/div[1]/div[1]/div[1]/span[1]"
     #km2 = driver.find_element_by_xpath(locator2)
     km2 = driver.find_element_by_xpath("/html/body/jsl/div[3]/div[8]/div[8]/div/div[1]/div/div/div[5]/div[1]/div[2]/div[1]/div[1]/div[1]/span[1]")
-    print km2
-    print km
+    print(km2)
+    print(km)
     #time.sleep( 10 )
     #driver.save_screenshot('screenshot.png')
     
