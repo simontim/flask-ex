@@ -10,9 +10,14 @@ def test_xpath():
     capabilities['marionette'] = True
  
     driver = webdriver.Remote(command_executor='http://sel01:4444/wd/hub',desired_capabilities=capabilities)
-    driver.get("https://www.google.com/maps/dir/41.9147798,12.3850072/41.8650296,12.6014119/data=!3m1!4b1!4m2!4m1!5i1")
-    time.sleep( 10 )
-    driver.save_screenshot('screenshot.png')
+    driver.get("https://www.google.com/maps/dir/41.9147798,12.3850072/41.8650296,12.6014119")
+    km = driver.find_element_by_xpath("//div[@id='pane']")
+    locator2 = //*[@id="section-directions-trip-0"]/div[2]/div[1]/div[1]/div[1]/span[1]
+    km2 = driver.find_element_by_xpath("locator2")
+    print km2
+    print km
+    #time.sleep( 10 )
+    #driver.save_screenshot('screenshot.png')
     
     
     driver.close()    
